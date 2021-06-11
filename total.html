@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="코로나 방문 일지" content="width=device-width, initial-scale=1.0">
+
+    <title>코로나 방문 일지</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+        table, th{
+
+            border: 1px solid #bcbcbc;
+
+            text-align:center;
+
+            margin:auto;
+
+        }
+
+        table{
+
+            width: 500px;
+
+            height: 100px;
+
+        }
+
+        h2{text-align:center;}
+
+    </style>
+
+ 
+
+</head>
+
+<body>
+
+    <h2>코로나 방문 일지</h2>
+
+    <table>
+
+        <tr>
+
+            <td>
+
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+
+                    <div>
+
+                        <input type="text" name="date" id="date" placeholder="날짜 ">
+
+                    </div>
+
+                    <div>
+
+                        <input type="text" name="time" id="time" placeholder="방문시각">
+
+                    </div>
+
+                    <div>
+
+                        <input type="text" name="agree" id="agree" placeholder="개인정보 수집 동의">
+
+                    </div>
+
+                    <div>
+
+                        <input type="text" name="place" id="place" placeholder="거주지">
+
+                    </div>
+
+                     <div>
+
+                        <input type="text" name="number" id="number" placeholder="전화번호">
+
+                    </div>
+
+                    
+
+                    <div  class="form-action-buttons">
+
+                        <input type="submit" value="등록">
+
+                    </div>
+
+                </form>
+
+            </td>
+
+            <td>
+
+                <table class="list" id="listAll">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>날짜</th>
+
+                            <th>방문시각</th>
+
+                            <th>개인정보 수집 동의</th>
+
+                            <th>거주지</th>
+
+                            <th>전화번호</th>
+
+                            <th></th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+ 
+
+                    </tbody>
+
+                </table>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+    <script src="total.js"></script>
+
+</body>
+
+</html>
